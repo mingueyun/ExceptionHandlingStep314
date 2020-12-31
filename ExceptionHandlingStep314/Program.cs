@@ -19,11 +19,11 @@ namespace ExceptionHandlingStep314
                 {
                     Console.WriteLine("What is your age?\n");
                     correctAge = int.TryParse(Console.ReadLine(), out HowOld);
-                    if (!correctAge) Console.WriteLine("thats not what i was asking");
+                    if (!correctAge) Console.WriteLine("thats not what i was asking.");
                 }
                 if (HowOld <= 0 )
                 {
-                    Console.WriteLine(" you have entered an incorrect age. please enter correctly.");
+                    Console.WriteLine(" you have entered your age as 0 or a negative value.. you are not born yet. ");
                     Console.ReadLine();
                     
                 }
